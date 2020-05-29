@@ -29,8 +29,3 @@ describe 'Dish show page' do
     expect(page).to have_content("Total Calorie Count: #{calorie_count}")
   end
 end
-
-# Story 2 of 3
-# As a visitor
-# When I visit a dish's show page
-# I see the total calorie count for that dish.
