@@ -1,2 +1,5 @@
 <h1><%= @chef.name %></h1>
+<% @chef.popular_ingredients do |ingredient| %>
+  <p><%= ingredient.name %></p><br/>
+<% end %>
 <%= button_to "View All Ingredients", "/chefs/#{@chef.id}/ingredients", method: :get %>
